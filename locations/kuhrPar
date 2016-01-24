@@ -1,4 +1,5 @@
 # kuhrPar
+CLOSE ALL
 act 'Leave the room':gt 'korrPar'
 
 $metkaM = $ARGS[0]
@@ -12,7 +13,7 @@ fcolor = rgb(0, 0, 0)
 bcolor = rgb(255, 255, 255)
 lcolor = rgb(106, 90, 205)
 '<center><b><font color="maroon">Kitchen</font></b></center>'
-'<center><img src="images/qwest/alter/<<$loc>>.jpg"></center>'
+'<center><img src="images/qwest/alter/kuhrPar.jpg"></center>'
 'The kitchen is next to the stove sink. Large refrigerator in the corner and kitchen table with chairs is against the wall.'
 gs 'family'
 
@@ -43,6 +44,8 @@ act 'Eat (0:30)':
 		'You don''t need any more tea.'
 	else
 		water += 20
+		cumlip = 0
+		fbreath = 0
 		'You gladly drank a mug of tea.'
 	end
 
@@ -78,6 +81,8 @@ act 'Have a snack (0:15)':
 		'You don''t need any more tea.'
 	else
 		water += 20
+		cumlip = 0
+		fbreath = 0
 		'You gladly drank a mug of tea.'
 	end
 
@@ -93,6 +98,8 @@ act 'Drink':
 		'You don''t need any more tea.'
 	else
 		water += 20
+		cumlip = 0
+		fbreath = 0
 		'You gladly drank a mug of tea.'
 	end
 
@@ -113,6 +120,8 @@ if pranik > 0:
 		manna += 100
 		energy += 20
 		water += 20
+		cumlip = 0
+		fbreath = 0
 		fat += 50
 		frost = 0
 		gs 'stat'
@@ -147,6 +156,8 @@ if edaD > 0:
 			'You don''t need any more tea.'
 		else
 			water += 20
+			cumlip = 0
+			fbreath = 0
 			'You gladly drank a cup of tea.'
 		end
 
@@ -174,12 +185,12 @@ end
 if lekarstvo > 0:
 	'you <<lekarstvo>> tablets.'
 
-	if sick > 0 and lekarday ! day:
+	if sick > 0 and lekarday ! daystart:
 		act 'Take a pill (0:05)':
 			cla
 			*clr
 			minut += 5
-			lekarday = day
+			lekarday = daystart
 			lekarstvo -= 1
 			sick -= sick * 20 / 100
 			lekrand = rand(1, 9)
@@ -194,7 +205,7 @@ end
 if vitamin > 0:
 	'you <<vitamin>> vitaminok.'
 
-	if vitaminday ! day:
+	if vitaminday ! daystart:
 		act 'Take vitamins (0:05)':
 			cla
 			*clr
@@ -202,7 +213,7 @@ if vitamin > 0:
 			if fat > salo:fat = salo
 
 			minut += 5
-			vitaminday = day
+			vitaminday = daystart
 			vitamin -= 1
 			frost = 0
 
@@ -222,3 +233,4 @@ if vitamin > 0:
 end
 
 --- kuhrPar ---------------------------------
+

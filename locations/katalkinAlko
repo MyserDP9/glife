@@ -9,6 +9,9 @@ if hour < 8:
 	exit
 end
 
+cumlip = 0
+fbreath = 0
+
 if alko < 6:
 	'You drank a glass of vodka with police. You will again pour into a glass of vodka.'
 
@@ -29,3 +32,4 @@ end
 act 'Leave':minut += 2 & gt 'vokzalGin'
 
 --- katalkinAlko ---------------------------------
+

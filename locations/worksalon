@@ -55,6 +55,8 @@ if $ARGS[0] = 'start':
 			'You don''t need any more tea.'
 		else
 			water += 20
+			cumlip = 0
+			fbreath = 0
 			'You gladly drank a mug of tea.'
 		end
 
@@ -156,7 +158,8 @@ if $ARGS[0] = 'start':
 
 				act 'Finish':gt 'worksalon', 'start'
 			end
-		if masha > 5 and masharab = 0:
+
+		elseif masha > 5 and masharab = 0:
 			act 'Masha ask a massage':
 				cla
 				'You go up to Masha and ask her "Mary, I''m so tired I can do a little massage, please"'
@@ -401,3 +404,4 @@ if $ARGS[0] = '3':
 end
 
 --- worksalon ---------------------------------
+

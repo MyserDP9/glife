@@ -3,9 +3,15 @@ if $ARGS[0] = 'start':
 	cla
 	clr
 	gs 'stat'
+	if mirror_steam ! hour: mirror_steam = 100
+	if $loc = 'vanrPar' and mirror_steam = hour or $loc = 'vanr' and mirror_steam = hour or $loc = 'yvan'and mirror_steam = hour: gt'mirror','steam'
+	if player_avatar = 1:
+		'<center><img src="avatar.jpg"></center>'
+	end
 	gs 'portmirror'
 	$gt1 = 'mirror'
 	$gt2 = 'fin'
+
 	dynamic $portmirror
 
 	act 'Move away from the mirror':
@@ -17,8 +23,8 @@ end
 if $ARGS[0] = 'fin':
 	cla
 	gt $locM, $metkaM
-
-	!'if housr = 1 and housrA = 1 and housrMir = 0 and fitMir = 0 and saunaYouRoom = 0:
+!'
+	if housr = 1 and housrA = 1 and housrMir = 0 and fitMir = 0 and saunaYouRoom = 0:
 		housrA = 0
 			gt 'korr'
 		end
@@ -31,7 +37,8 @@ if $ARGS[0] = 'fin':
 
 		if housrA = 0 and fitMir = 1 and saunaYouRoom = 0:
 			fitMir = 0
-			gt 'fit', 'razd'
+			! WD: Argument is 'dressing room'
+			gt 'fit', 'dressing room'
 		end
 
 		if housrA = 0 and stripMir = 1 and saunaYouRoom = 0:
@@ -62,7 +69,27 @@ if $ARGS[0] = 'fin':
 		if housrA = 0 and tanhouse1 = 1:
 			tanhouse1 = 0
 			gt 'spalnya'
-		end'!
+		end
+'!
+end
+
+if $ARGS[0] = 'steam':
+	cla
+	clr
+	gs'stat'
+	'<center><img src="images/pic/mirror1.jpg"></center>'
+	'<center>Mirror heavily misted. It must wipe or leave to cool.</center>'
+	act 'Wipe the mirror':
+		cls
+		minut+=1
+		mirror_steam = 100
+		gs'stat'
+		'<center><img src="images/pic/mirror2.jpg"></center>'
+		'<center>You wiped the mirror with a towel.</center>'
+		act 'Look in the mirror':gt'mirror','start'
+	end
+	act '<b>Move away from the mirror</b>':gt'mirror','fin'
 end
 
 --- mirror ---------------------------------
+

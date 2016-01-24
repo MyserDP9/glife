@@ -1,4 +1,11 @@
 # sexshop
+CLOSE ALL
+
+$metkaM = $ARGS[0]
+$locM = $CURLOC
+$metka = $ARGS[0]
+$loc = $CURLOC
+
 if $ARGS[0] = 'start':
 	$loc = $CURLOC
 	$metka = $ARGS[0]
@@ -176,7 +183,7 @@ if $ARGS[0] = 'start':
 			gs 'stat'
 			'You bought a porn magazine and paid the cashier.'
 
-			act 'Move away from the counter':gt'sexshop','start'
+			act 'Move away from the counter':gt 'sexshop','start'
 		end
 	end
 
@@ -201,10 +208,10 @@ if $ARGS[0] = 'start':
 			minut += 15
 			middildo = 1
 			money -= 1500
-			'<center><img src="images/etogame/kassa.jpg" ></center>'
+			'<center><img src="images/etogame/kassa.jpg"></center>'
 			'You bought a 15cm long dildo and paid the cashier.'
 
-			act 'Move away from the counter':gt'sexshop','start'
+			act 'Move away from the counter':gt 'sexshop','start'
 		end
 	end
 
@@ -215,10 +222,10 @@ if $ARGS[0] = 'start':
 			minut += 15
 			largedildo = 1
 			money -= 2500
-			'<center><img src="images/etogame/kassa.jpg" ></center>'
+			'<center><img src="images/etogame/kassa.jpg"></center>'
 			'You bought a 20cm long dildo and paid the cashier.'
 
-			act 'Move away from the counter':gt'sexshop','start'
+			act 'Move away from the counter':gt 'sexshop','start'
 		end
 	end
 
@@ -229,10 +236,10 @@ if $ARGS[0] = 'start':
 			minut += 15
 			bigdildo = 1
 			money -= 4500
-			'<center><img src="images/etogame/kassa.jpg" ></center>'
+			'<center><img src="images/etogame/kassa.jpg"></center>'
 			'You bought a 25cm long dildo and paid the cashier.'
 
-			act 'Move away from the counter':gt'sexshop','start'
+			act 'Move away from the counter':gt 'sexshop','start'
 		end
 	end
 
@@ -243,10 +250,10 @@ if $ARGS[0] = 'start':
 			minut += 15
 			extradildo = 1
 			money -= 6500
-			'<center><img src="images/etogame/kassa.jpg" ></center>'
+			'<center><img src="images/etogame/kassa.jpg"></center>'
 			'You bought a 30cm long dildo and paid the cashier.'
 
-			act 'Move away from the counter':gt'sexshop','start'
+			act 'Move away from the counter':gt 'sexshop','start'
 		end
 	end
 
@@ -257,10 +264,10 @@ if $ARGS[0] = 'start':
 			minut += 15
 			superdildo = 1
 			money -= 8500
-			'<center><img src="images/etogame/kassa.jpg" ></center>'
+			'<center><img src="images/etogame/kassa.jpg"></center>'
 			'You bought a 35cm long dildo and paid the cashier.'
 
-			act 'Move away from the counter':gt'sexshop','start'
+			act 'Move away from the counter':gt 'sexshop','start'
 		end
 	end
 
@@ -271,10 +278,10 @@ if $ARGS[0] = 'start':
 			minut += 15
 			maddildo = 1
 			money -= 12000
-			'<center><img src="images/etogame/kassa.jpg" ></center>'
+			'<center><img src="images/etogame/kassa.jpg"></center>'
 			'You bought a 40cm long dildo and paid the cashier.'
 
-			act 'Move away from the counter':gt'sexshop','start'
+			act 'Move away from the counter':gt 'sexshop','start'
 		end
 	end
 
@@ -352,6 +359,10 @@ if $ARGS[0] = 'podval':
 end
 
 if $ARGS[0] = 'toi':
+	$metkaM = $ARGS[0]
+	$locM = $CURLOC
+	$metka = $ARGS[0]
+	$loc = $CURLOC
 	cla
 	clr
 	*clr
@@ -364,14 +375,6 @@ if $ARGS[0] = 'toi':
 	'<center><img src="images/etogame/PublicToilet.jpg"></center>'
 	''
 
-	if tanga = 1:
-		act 'Remove Underwear':
-			cla
-			tanga = 0
-			gt 'sexshop', 'toi'
-		end
-	end
-
 	act 'Look in the mirror':
 		cla
 		gs 'portmirror'
@@ -382,48 +385,6 @@ if $ARGS[0] = 'toi':
 		act 'Move away from the mirror':
 			cla
 			gt 'sexshop', 'toi'
-		end
-	end
-
-	!!0.2.6 extension: reworked how quick wash and face wash was supposed to work, it is now uniform in all toilet/bathroom locations
-	!!Removed sweat =- 1 when cum is wiped off clothes
-	!!clrbelo: Amount of clean panties available
-	if (cumpussy > 0 or cumbelly > 0 or cumass > 0 or cumanus > 0) and clrbelo > 0:
-		act 'Quick wash (0:15)':
-			cla
-			*clr
-
-			if clrbelo > 0 and tanga = 1:
-				clrbelo -= 1
-				dirtbelo += 1
-			elseif clrbelo = 0 and tanga = 1:
-				tanga = 0
-				dirtbelo += 1
-			end
-
-			dynamic $showerdin
-			sweat -= 1
-			minut += 15
-			'<center><img src="images/pics/wash5.jpg"></center>'
-			'You gave yourself a catlick, thus removing any traces of cum.'
-
-			act 'Finish':gt 'sexshop', 'toi'
-		end
-	end
-
-	if cumlip > 0 or cumface > 0:
-		act 'Clean your face from sperm (0:05)':
-			cla
-			*clr
-			mop = 1
-			cumlip = 0
-			cumface = 0
-			sweat -= 1
-			minut += 5
-			'<center><img src="images/etogame/facesp.jpg"></center>'
-			'You clean your face and got rid of any trace of cum.'
-
-			act 'Finish':gt 'sexshop', 'toi'
 		end
 	end
 
@@ -439,24 +400,12 @@ if $ARGS[0] = 'toi':
 			act 'Leave':gt 'sexshop', 'toi'
 		end
 	end
-	!!
 
-	if tampon > 0 and mesec > 0 and isprok = 0:
-		act 'Use a tampon (0:05)':
-			cla
-			*clr
-			tampon -= 1
-			isprok = 1
-			minut += 5
-			manna -= 5
-			'<center><img src="images/pics/wash3.jpg"></center>'
-			'You use a tampon.'
+	dynamic $tampon
+	dynamic $quickwash
+	dynamic $basin
 
-			act 'Finish':gt 'sexshop', 'toi'
-		end
-	end
-
-	act 'Off the toilet':gt 'sexshop', 'podval'
+	act 'Leave the toilet':gt 'sexshop', 'podval'
 end
 
 if $ARGS[0] = 'pip':
@@ -477,7 +426,7 @@ if $ARGS[0] = 'pip':
 	if ghnow > 0:'You served <<ghnow>> cocks.'
 
 	act 'Get out of the booth':gt 'sexshop', 'podval'
-	
+
 	if money >= 50 and hour < 23:
 		act 'Stick 50 rubles in the machine':
 			cla
@@ -520,6 +469,7 @@ if $ARGS[0] = 'pip':
 					ghnow += 1
 					money += 300
 					fingerRand = rand(1, 5)
+					! WD: Rename missing Image ~  'ghFinger.jpg' to 'ghFinger5.jpg'
 					'<center><img src="images/etogame/ghFinger<<fingerRand>>.jpg"></center>'
 					'You poke your finger in the hole showing that you are ready to serve the stranger.'
 					'The stranger slipped 300 rubles into the hole, and then his cock stuck out of the hole.'
@@ -533,6 +483,7 @@ if $ARGS[0] = 'pip':
 						gloryhole += 1
 						swallow += 1
 						cumlip += 1
+						mistressqwest += 1
 						dynamic $venerasiak
 						ghprand = rand(1, 38)
 						'<center><img src="images/picV/gloryhole<<ghprand>>.jpg"></center>'
@@ -579,7 +530,7 @@ if $ARGS[0] = 'kendra':
 		lesbian += 1
 		'<center><img src="images/img/centr/shkend1.jpg"></center>'
 		'You quickly throw off clothes and knelt before her pussy and lick her eagerly. As long as you carefully suck Kendra as squeals and praises your tongue, saying that no tounge has pleased her much as yours.'
-		'"Now pick anything from the toys" says Kendra"'
+		'"Now pick anything from the toys" says Kendra'
 
 		act 'Give her a dildo':gt 'sexshop', 'kendra1'
 		act 'Give her a strapon':gt 'sexshop', 'kendra2'
@@ -610,7 +561,7 @@ if $ARGS[0] = 'kendra1':
 			sweat += 1
 			'<center><img src="images/img/centr/shkend4.jpg"></center>'
 			'Suddenly, when she is ready to cum, Kendra begin pissin, her urine flowing allong the dildo and your coating your hand.'
-			'Damn!" you cried out and were about to drop the dildo.'
+			'"Damn!" you cried out and were about to drop the dildo.'
 			'"Let''s finish up, slut!" cried Kendra'
 
 			act 'Leave her':gt 'sexshop', 'kendra3'
@@ -649,7 +600,7 @@ if $ARGS[0] = 'kendra2':
 	minut += 10
 	gs 'stat'
 	'<center><img src="images/img/centr/shkend8.jpg"></center>'
-	'Kendra slides on the strapon and looking at you asks, "Well, beauty in which hole do you want it?'
+	'Kendra slides on the strapon and looking at you asks, "Well, beauty in which hole do you want it?"'
 
 	act 'In the vagina':
 		cla
@@ -719,7 +670,7 @@ if $ARGS[0] = 'kendra4':
 	if picrand = 11:'Kendra kneels down and begins to lick your pussy, her tongue slides all over your sex, your sensitive clit and dipping into the vagina a few minutes of her effort, you left off.'
 	if picrand = 12:'Kendra kneels down and her tongue sticks out tryign to slide into your ass, you writhe as she her tounge saneks and twists inside your ass. Her fingers penetrating your pussy for a few minutes, and the feeling of her tounge in your ass and her fingers in your pussy brings you to a shuddering orgasm.'
 
-	'"Well, I will try to fulfill your desires?" Kendra says, catching her breath. "Now my turn.'
+	'"Well, I will try to fulfill your desires?" Kendra says, catching her breath. "Now my turn."'
 
 	act 'Give her strapon':gt 'sexshop', 'kendra2'
 
@@ -749,3 +700,4 @@ if $ARGS[0] = 'shprod':
 end
 
 --- sexshop ---------------------------------
+

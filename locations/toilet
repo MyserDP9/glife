@@ -10,6 +10,7 @@ if $ARGS[0] = 'start':
 	fcolor = rgb(0, 0, 0)
 	bcolor = rgb(255, 255, 255)
 	lcolor = rgb(106, 90, 205)
+	$ImageNeededPlacholder
 	'<center><img src="images/toilet/cabin.jpg"></center>'
 	'Do you hear any noises at some of the booths ...'
 
@@ -24,7 +25,8 @@ if $ARGS[0] = 'start':
 		clr
 		*clr
 		gs 'stat'
-		'<center><img src="images/toilet/pry_1.jpg"></center>'
+		$ImageNeededPlacholder
+		! WD: IMAGE NEEDED ~ '<center><img src="images/toilet/pry_1.jpg"></center>'
 		'You looked into the booth and all ....'
 		toisexrand = rand(0, 100)
 
@@ -35,6 +37,7 @@ if $ARGS[0] = 'start':
 				clr
 				*clr
 				gs 'stat'
+
 				'<center><img src="images/toilet/cabin_0.jpg"></center>'
 				'And all the booths were empty'
 
@@ -50,6 +53,7 @@ if $ARGS[0] = 'start':
 					clr
 					*clr
 					gs 'stat'
+
 					'<center><img src="images/toilet/toisex_1_1.jpg"></center>'
 					'You know her, this girl watched porn in the next stall ....'
 					'You have enabled cell phone and started filming herself as she caresses ...'
@@ -62,6 +66,7 @@ if $ARGS[0] = 'start':
 					clr
 					*clr
 					gs 'stat'
+
 					'<center><img src="images/toilet/toisex_2_1.jpg"></center>'
 					'You know her - this girl watched porn in the next stall ....'
 					'You have enabled cell phone and started filming herself as she caresses ...'
@@ -86,6 +91,8 @@ if $ARGS[0] = '0':
 	fcolor = rgb(0, 0, 0)
 	bcolor = rgb(255, 255, 255)
 	lcolor = rgb(106, 90, 205)
+	$ImageNeededPlacholder
+
 	'<center><img src="images/toilet/pornjrolik.jpg"></center>'
 	'Finding and viewing movies on your phone you are very excited ...'
 
@@ -95,7 +102,8 @@ if $ARGS[0] = '0':
 		cla
 		*clr
 		bankfond = bankfond + 1000
-		'<center><img src="images/toilet/pornjrolik.jpg"></center>'
+		$ImageNeededPlacholder
+		! WD: IMAGE NEEDED ~ '<center><img src="images/toilet/pornjrolik.jpg"></center>'
 		'Uploading videos on the Internet, you sold it to porn site for 1000 rubles!'
 		'You transferred the money to the account ...'
 
@@ -111,6 +119,8 @@ if $ARGS[0] = '1':
 	clr
 	gs 'stat'
 	gs 'time'
+	$ImageNeededPlacholder
+
 	'<center><img src="images/toilet/toisex_1_2.jpg"></center>'
 	'You knocked on the stall and she opened the door a little delay'
 	'She had to get dressed, but her cheeks were glowing eyes and ran - she realized that he slept ...'
@@ -122,6 +132,7 @@ if $ARGS[0] = '1':
 	act 'She agreed and took off her bra ...':
 		cla
 		*clr
+
 		'<center><img src="images/toilet/toisex_1_3.jpg"></center>'
 		'Nipples on her small breasts excitedly sticking ...'
 		'Looking at her you excited and your cock swollen ...'
@@ -131,6 +142,7 @@ if $ARGS[0] = '1':
 		act '...':
 			cla
 			*clr
+
 			'<center><img src="images/toilet/toisex_1_4.jpg"></center>'
 			'Removing panties she got down on her knees and kiss your cock ...'
 			'Kissing is certainly nice, but I want a good suction ...'
@@ -138,6 +150,7 @@ if $ARGS[0] = '1':
 			act 'Let ka kiddie more active ....':
 				cla
 				*clr
+
 				'<center><img src="images/toilet/toisex_1_5.jpg"></center>'
 				'She began actively otsayvat you ...'
 				'You are excited and want to shove her cock in my mouth a little deeper ....'
@@ -145,6 +158,7 @@ if $ARGS[0] = '1':
 				act 'Put in your mouth most tomatoes ...':
 					cla
 					*clr
+
 					'<center><img src="images/toilet/toisex_1_6.jpg"></center>'
 					'You are rude and started to fuck her deep in her mouth ...'
 					'Probably need to try it with coarser ...'
@@ -152,6 +166,7 @@ if $ARGS[0] = '1':
 					act 'Swat hair and bend to the toilet ...':
 						cla
 						*clr
+
 						'<center><img src="images/toilet/toisex_1_7.jpg"></center>'
 						'Bent his head to the toilet you started to insult her ...'
 						'You called her a dirty whore and her slave ...'
@@ -160,6 +175,7 @@ if $ARGS[0] = '1':
 						act 'Dunk your head in the toilet and wash ...':
 							cla
 							*clr
+
 							'<center><img src="images/toilet/toisex_1_8.jpg"></center>'
 							'You okunli her head in the ass ...'
 							'She was trembling with excitement and asked her to cum in her mouth ...'
@@ -167,6 +183,7 @@ if $ARGS[0] = '1':
 							act 'Give her suck ...':
 								cla
 								*clr
+
 								'<center><img src="images/toilet/toisex_1_9.jpg"></center>'
 								'She began to masturbate you substituting your sexy mouth ...'
 								'Reaching the peak of excitement you removed it aside ...'
@@ -175,6 +192,7 @@ if $ARGS[0] = '1':
 								act '...':
 									cla
 									*clr
+
 									'<center><img src="images/toilet/toisex_1_10.jpg"></center>'
 									'He dutifully stood up and looking into your eyes waited for the apogee ...'
 									'You discharge of semen in her mouth, and a few drops fell on the rim of the toilet ...'
@@ -190,6 +208,7 @@ if $ARGS[0] = '1':
 										*clr
 										clr
 										gs 'stat'
+
 										'<center><img src="images/toilet/toisex_1_11.jpg"></center>'
 										'Resignedly she began to lick clean the toilet ...'
 										'And you thought:"Do not offer if she participated in the filming of" ...'
@@ -203,6 +222,7 @@ if $ARGS[0] = '1':
 													cla
 													*clr
 													BDSMactress = BDSMactress + 1
+
 													'<center><img src="images/toilet/toisex_1_1.jpg"></center>'
 													'It:- This is an interesting aredlozhenie. Where and when?'
 													'You:- Come to the casting on Saturday! Shooting on Sundays!'
@@ -215,6 +235,7 @@ if $ARGS[0] = '1':
 												if BDSMactressrand = 2:
 												cla
 												*clr
+
 												'<center><img src="images/toilet/oblom_1.jpg"></center>'
 												'She:- Fuck you for dick! Goat!'
 												'You:Honey, what are you so? I thought you like domination!'
@@ -225,6 +246,7 @@ if $ARGS[0] = '1':
 													cla
 													*clr
 													bankfond = bankfond + 1000
+
 													'<center><img src="images/toilet/pornjrolik.jpg"></center>'
 													'- That''s because of a bitch! - You might think ....'
 													'You I still become a star! Though on the Internet!'
@@ -254,6 +276,7 @@ if $ARGS[0] = '2':
 	clr
 	gs 'stat'
 	gs 'time'
+
 	'<center><img src="images/toilet/toisex_2_2.jpg"></center>'
 	'You knocked on the stall and she opened the door a little delay'
 	'She had to get dressed, but her cheeks were glowing eyes and ran - she realized that he slept ...'
@@ -265,6 +288,7 @@ if $ARGS[0] = '2':
 	act 'She agreed and took off her blouse ...':
 		cla
 		*clr
+
 		'<center><img src="images/toilet/toisex_2_3.jpg"></center>'
 		'Nipples on her small breasts excitedly sticking ...'
 		'Looking at her you excited and your cock swollen ...'
@@ -274,6 +298,7 @@ if $ARGS[0] = '2':
 		act '...':
 			cla
 			*clr
+
 			'<center><img src="images/toilet/toisex_2_4.jpg"></center>'
 			'Removing panties she knelt down and began to suck you dick ...'
 			'It''s certainly nice, but I want a good suction ...'
@@ -281,6 +306,7 @@ if $ARGS[0] = '2':
 			act 'Let ka kiddie more active ....':
 				cla
 				*clr
+
 				'<center><img src="images/toilet/toisex_2_5.jpg"></center>'
 				'She began actively otsayvat you ...'
 				'You are excited and want to shove her cock in my mouth a little deeper ....'
@@ -288,6 +314,7 @@ if $ARGS[0] = '2':
 				act 'Put in your mouth most tomatoes ...':
 					cla
 					*clr
+
 					'<center><img src="images/toilet/toisex_2_6.jpg"></center>'
 					'You are rude and started to fuck her deep in her mouth ...'
 					'Probably need to try it with coarser ...'
@@ -295,6 +322,7 @@ if $ARGS[0] = '2':
 					act 'Swat hair and bend to the toilet ...':
 						cla
 						*clr
+
 						'<center><img src="images/toilet/toisex_2_7.jpg"></center>'
 						'Bent his head to the toilet you started to insult her ...'
 						'You called her a dirty whore and her slave ...'
@@ -304,6 +332,7 @@ if $ARGS[0] = '2':
 						act 'Dunk your head in the toilet and wash ...':
 							cla
 							*clr
+
 							'<center><img src="images/toilet/toisex_2_8.jpg"></center>'
 							'You okunli her head in the ass ...'
 							'She was trembling with excitement and asked her to cum in her mouth ...'
@@ -311,6 +340,7 @@ if $ARGS[0] = '2':
 							act 'Give it a lick dick ...':
 								cla
 								*clr
+
 								'<center><img src="images/toilet/toisex_2_9.jpg"></center>'
 								'She began to lick your dick their sexual tongue ...'
 								'Reaching the peak of excitement you finished in her mouth ...'
@@ -319,6 +349,7 @@ if $ARGS[0] = '2':
 								act '...':
 									cla
 									*clr
+
 									'<center><img src="images/toilet/toisex_2_10.jpg"></center>'
 									'He dutifully swallowed and opened her mouth ...'
 									'Have you checked - she really swallowed every drop posleedney ...'
@@ -334,6 +365,7 @@ if $ARGS[0] = '2':
 										sexm = sexm + 1
 										manna = manna + 25
 										gs 'stat'
+
 										'<center><img src="images/toilet/toisex_2_11.jpg"></center>'
 										'Groaning she held her fingers on her pussy ...'
 										'Sheath of her was full of grease - you can see that she was excited ...'
@@ -349,6 +381,7 @@ if $ARGS[0] = '2':
 												cla
 												*clr
 												BDSMactress = BDSMactress + 1
+
 												'<center><img src="images/toilet/toisex_2_3.jpg"></center>'
 												'It:- This is an interesting aredlozhenie. Where and when?'
 												'You:- Come to the casting on Saturday! Shooting on Sundays!'
@@ -359,6 +392,7 @@ if $ARGS[0] = '2':
 											elseif BDSMactressrand = 2:
 												cla
 												*clr
+
 												'<center><img src="images/toilet/oblom_1.jpg"></center>'
 												'She:- Fuck you for dick! Goat!'
 												'You:Honey, what are you so? I thought you like domination!'
@@ -369,6 +403,7 @@ if $ARGS[0] = '2':
 													cla
 													*clr
 													bankfond = bankfond + 1000
+
 													'<center><img src="images/toilet/pornjrolik.jpg"></center>'
 													'- That''s because of a bitch! - You might think ....'
 													'You I still become a star! Though on the Internet!'
@@ -391,3 +426,4 @@ if $ARGS[0] = '2':
 end
 
 --- toilet ---------------------------------
+

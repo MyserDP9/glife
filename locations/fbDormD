@@ -224,6 +224,8 @@ $d_fbd_drunk = {
 		cls
 		minut += 60
 		alko += 6
+		cumlip = 0
+		fbreath = 0
 		gs 'stat'
 		'Noisy group fun and buzzing like a disturbed hive. You order typed, although it passed most of the booze. <<$bname>> pours you a drink again and offers.'
 
@@ -258,6 +260,8 @@ $d_fbd_mass = {
 		horny += 10
 		minut += 60
 		alko += 6
+		cumlip = 0
+		fbreath = 0
 		horny += 20
 		gs 'stat'
 
@@ -381,7 +385,7 @@ $d_fbd_threesome = {
 						cumlip += 1
 						gs 'stat'
 						'<center><img src="images/qwest/alter/Ev/fbdrcum.jpg"></center>'
-						'Suddenly you hit on the lips warm, viscous liquid with a pungent odor and taste even sharper. The second guy started razryazhatsya your mouth. You`re standing on my knees smeared with sperm in the face and look up at the guys.'
+						'Suddenly you hit on the lips warm, viscous liquid with a pungent odor and taste even sharper. The second guy started razryazhatsya your mouth. You''re standing on my knees smeared with sperm in the face and look up at the guys.'
 						dynamic $d_fbd_end
 					end
 				end
@@ -391,3 +395,4 @@ $d_fbd_threesome = {
 }
 
 --- fbDormD ---------------------------------
+

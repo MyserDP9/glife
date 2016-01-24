@@ -1,12 +1,14 @@
 # vokzalGin
 $metka = $ARGS[0]
 $loc = $CURLOC
+CLOSE ALL
+if sound = 0:PLAY 'sound/vokzal2.mp3',30
 clr
 frost = 0
 poezddalsled = 0
 gs 'vokdin'
-gs'vokdinvera'
-gs'vokmantoiev'
+gs 'vokdinvera'
+gs 'vokmantoiev'
 gs 'stat'
 fcolor = rgb(0, 0, 0)
 bcolor = rgb(255, 255, 255)
@@ -16,6 +18,7 @@ lcolor = rgb(106, 90, 205)
 '<center><h4>Station</h4></center>'
 '<center><img src="images/qwest/alter/vokzal.jpg"></center>'
 'In the center of the station waiting room and <a href="exec:dynamic $din_vokzalg_kassi">Case</a> with the scoreboard. In one wing are <a href="exec:dynamic $din_vokzalg_kabinet">offices bosses</a>, and in the other <a href="exec:minut += 1 & dynamic $din_vokzalg_toilet">Toilets</a>.'
+'Exit to <a href="exec:GT ''vokzalperG'',''start''">Peron</a>'
 
 if katalkinSexOnce = 1:'There is a small <a href="exec:minut += 5 & gt ''katalkin''">police</a> station inside the terminal.'
 
@@ -28,10 +31,10 @@ end
 act 'Leave':minut += 3 & gt 'vokzalG'
 
 if vokzalVork >= 1:
-	if cleZalDay ! day:
+	if cleZalDay ! daystart:
 		act 'Mopping the floor in the waiting room':
 			cls
-			cleZalDay = day
+			cleZalDay = daystart
 			minut += 60
 			sweat += 1
 
@@ -46,10 +49,10 @@ if vokzalVork >= 1:
 		end
 	end
 
-	if cleMTDay ! day:
+	if cleMTDay ! daystart:
 		act 'Mopping the floor in the men''s room':
 			cls
-			cleMTDay = day
+			cleMTDay = daystart
 			minut += 30
 			sweat += 1
 
@@ -66,10 +69,10 @@ if vokzalVork >= 1:
 		end
 	end
 
-	if cleWTDay ! day:
+	if cleWTDay ! daystart:
 		act 'Mopping the floor in the women''s restroom':
 			cls
-			cleWTDay = day
+			cleWTDay = daystart
 			minut += 30
 			sweat += 1
 
@@ -85,10 +88,10 @@ if vokzalVork >= 1:
 		end
 	end
 
-	if cleMTDay = day and cleWTDay = day and cleZalDay = day and cleZarplatDay ! day:
+	if cleMTDay = daystart and cleWTDay = daystart and cleZalDay = daystart and cleZarplatDay ! daystart:
 		act 'Get salary':
 			cls
-			cleZarplatDay = day
+			cleZarplatDay = daystart
 			vokzalVork += 1
 			money += 250
 			minut += 3
@@ -124,8 +127,9 @@ if poezddalsled = 1:
 	'Platform fussy run hucksters vtyuhivat their goods train passengers. On the part of all this fuss watches Police.'
 
 	if tovarL > 0:
-		act 'Vtyuhivat their goods passengers.':gt 'vokzaltorg'
+		act 'Sell your goods to passengers.':gt 'vokzaltorg'
 	end
 end
 
 --- vokzalGin ---------------------------------
+
